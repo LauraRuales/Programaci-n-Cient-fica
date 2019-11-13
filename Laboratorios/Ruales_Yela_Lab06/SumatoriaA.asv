@@ -1,0 +1,8 @@
+function resultado = SumatoriaA(varargin) 
+if interacciones>1
+    resultado = n*((2*interacciones)-1) + SumatoriaA(n,interacciones-1);
+else
+    resultado = (n*(2*interacciones-1));
+    resultado = resutado*n;
+end
+varargin

@@ -1,0 +1,19 @@
+% %%Descripción: Permite determinar a qué grupo pertenece el valor de la distancia absoluta calculada previamente,
+% teniendo en cuenta la siguiente clasificación: 
+% %%Grupo 1: De 0 a menos de 2 unidades.
+% %%Grupo 2: De 2 a menos de 4 unidades.
+% %%Grupo 3: De 4 a menos de 6 unidades.
+% %%Grupo 4: 6 o más unidades.
+% %%Toma como parametro la distancia de la función
+% %%Retorna el grupo de clasificación de la distancia
+
+function [Out1] = Clasificacion(Parm1)
+if Parm1>=0 && Parm1<2
+    Out1=1;
+elseif Parm1>=2 && Parm1<4
+    Out1=2;
+elseif Parm1>=4 && Parm1<6
+    Out1=3;
+else
+    Out1=4;
+end
